@@ -219,8 +219,8 @@ a.link-button.getin-btn {
 }
 
 input[type=email].email-1 {
-  border-bottom-color: #2adff1;
-  background-color: #202020;
+  color: #ebebeb;
+  font-family: 'Roboto', cursive;
 }
 
 label.label.label-1 {
@@ -562,12 +562,6 @@ button.app-launch.btn {
   span.text-element.text-2 {
     color: rgba(231, 231, 231, .87);
     text-align: center;
-  }
-
-  /* Interaction Elements */
-
-  input[type=email].email-1 {
-    background-color: #191e1e;
   }
 
   .container-grid.detail-section {
