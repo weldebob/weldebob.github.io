@@ -70,11 +70,12 @@ h6.pages-header {
 }
 
 h6.pane-details-header {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, .87);
   text-align: center;
-  font-size: 24px;
+  text-transform: uppercase;
+  font-size: 18px;
   font-family: 'PT Sans', cursive;
 }
 
@@ -166,6 +167,7 @@ span.text-element.step-5.step-header {
 span.text-element.sub-slogan {
   color: rgba(255, 255, 255, .87);
   font-size: 15px;
+  font-family: 'Roboto', cursive;
 }
 
 span.text-element.text-2 {
@@ -208,6 +210,11 @@ span.text-element.phase-name {
   font-style: italic;
   font-size: 30px;
   font-family: 'Roboto Slab', cursive;
+}
+
+span.text-element.centered.sub-slogan {
+  margin-top: 2px;
+  text-align: center;
 }
 
 span.text-element.copy-code:active {
@@ -543,6 +550,12 @@ div.responsive-picture.medium-detail {
   max-width: 280px;
 }
 
+.container-grid.detail-intro {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+
 @supports (display: grid) {
   .container-grid.app-overview {
     display: grid;
@@ -580,6 +593,14 @@ div.responsive-picture.medium-detail {
     text-align: left;
     font-size: 20px;
     font-family: 'PT Sans', cursive;
+  }
+
+  h6.pane-details-header {
+    font-size: 22px;
+  }
+
+  h6.large.pane-details-header {
+    font-size: 38px;
   }
 
   p.paragraph {
@@ -674,10 +695,6 @@ div.responsive-picture.medium-detail {
 @media screen and (min-width: 62.0625rem) {
   /* Text Elements */
 
-  h6.pane-details-header {
-    margin-top: 5rem;
-  }
-
   span.text-element.step-header {
     right: -260px;
   }
@@ -704,6 +721,19 @@ div.responsive-picture.medium-detail {
     margin-left: auto;
   }
 
+  .container-grid.detail-intro {
+    margin-top: 180px;
+  }
+
+  .container-grid.animation-steps-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-grid.container-2 {
+    background-color: #1b1b1b;
+  }
+
   @supports (display: grid) {
       .container-grid.app-overview {
       grid-template-columns: repeat(3 , 1fr);
@@ -712,6 +742,10 @@ div.responsive-picture.medium-detail {
 
     div.responsive-picture.trigger-pane {
       grid-area: trigger-pane;
+    }
+
+    .container-grid.detail-intro {
+      margin-top: 180px;
     }
   }
 }
