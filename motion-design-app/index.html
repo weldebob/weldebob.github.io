@@ -11,7 +11,7 @@
   <script>document.createElement( "picture" );</script>
   <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,i%7CPT+Sans%7CRoboto+Condensed:b,bi,i%7CRoboto+Slab%7CRoboto:400,900,900i,i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,i%7CPT+Sans%7CRoboto+Condensed:400,b,bi,i%7CRoboto:400,b,bi,i">
 <link rel="stylesheet" href="css/custom.css">
 
 </head>
@@ -21,33 +21,36 @@
     <div class="container-grid">
       <h1 class="heading-2">Motion Design App.<sup class="heading-text-3"> Beta</sup>
       </h1>
-      <span class="text-element sub-slogan">Works with <span class="text-text-1">any</span> site</span>
+      <span class="text-element sub-slogan">Works with <span class="text-text-1">any</span> site. Really!</span>
     </div>
     <div class="container-grid"></div>
   </div>
   <div class="container-grid pitch-component">
     <div class="container-grid hero-section">
-      <div class="container-grid page-title-component">
-        <h2 class="page-title trigger">Trigger<span class="heading-text-1">...</span>
-        </h2>
-        <h2 class="page-title motion">Motion<span class="heading-text-2">!</span>
-        </h2>
+      <div class="container-grid hero-text-componenet">
+        <div class="container-grid page-title-component">
+          <h2 class="page-title trigger">Trigger<span class="heading-text-1">...</span>
+          </h2>
+          <h2 class="page-title motion">Motion<span class="heading-text-2">!</span>
+          </h2>
+        </div>
+        <p class="paragraph paragraph-3">Add engaging animations&nbsp;with Motion Design App.<br>No coding. <span class="emphasize">Works with <em>any</em> website!</span>
+        </p>
+        <div class="container-grid container-3"><a class="link-button btn primary-btn" href="#">Get in on the beta</a>
+          <span class="text-element choice-separator">OR</span>
+          <a class="link-text primary-textlink" href="#">Learn more</a>
+        </div>
       </div>
       <div class="container-grid hero-image-component">
-        <div class="container-grid hero-overlay">
-          <div class="container-grid start-component"><a class="link-button colorzoom getin-btn z-depth-5" href="signup.html">Get in on the beta</a>
-          </div>
-        </div>
         <div class="responsive-picture hero-image">
           <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="./images/motion-project.jpg" media="(min-width: 993px)"><!--[if IE 9]></video><![endif]--><img alt="Placeholder Picture" src="./images/hero-image-s.jpg">
+            <source srcset="./images/motion-project.jpg" media="(min-width: 601px)"><!--[if IE 9]></video><![endif]--><img alt="Placeholder Picture" src="./images/motion-project-s.jpg">
           </picture>
         </div>
       </div>
-      <div class="container-grid detail-intro">
+      <div class="container-grid detail-intro" id="md-panes">
         <h6 class="pane-details-header large">With Motion Design App you can</h6>
-        <h6 class="pane-details-header">Control Triggers and Motions through point-n-click!</h6>
-        <span class="text-element sub-slogan centered">Works with <span class="text-text-1">any</span> site</span>
+        <h6 class="pane-details-header">Add Motion Triggers and animations through point-n-click!</h6>
       </div>
       <div class="container-grid app-overview">
         <div class="responsive-picture pane-detail trigger-pane">
@@ -70,13 +73,22 @@
           <picture><img alt="Placeholder Picture" src="./images/motions.jpg">
           </picture>
         </div>
+        <div class="container-grid container-4">
+          <div class="responsive-picture motion-designer">
+            <picture><img alt="Placeholder Picture" src="./images/hero-image-s.jpg">
+            </picture>
+          </div>
+          <div class="container-grid pane-explanation">
+            <p class="paragraph paragraph-4">Simply load your site. Then use the right-side Motion Design Panels to create events that trigger cool, customizable, animations.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container-grid container-2">
       <div class="container-grid detail-section">
-        <p class="paragraph paragraph-2">How Motion Design App works</p>
-        <h4 class="detail-header">Add Super Engaging Animations</h4>
-        <h4 class="detail-header sub-header">In 5 simple steps:</h4>
+        <p class="paragraph paragraph-2">What Motion Design App does for you?</p>
+        <h4 class="detail-header">Grab Visitor Attention. Improve Enagement.</h4>
+        <h4 class="detail-header sub-header">Look great in 5 simple steps:</h4>
         <div class="container-grid animation-steps-list">
           <div class="container-grid animation-step">
             <span class="text-element step-header step-1">1.</span>
@@ -123,6 +135,29 @@
   <script src="js/outofview.js"></script>
   <script src="js/materialize.min.js"></script>
   <script>M.AutoInit();</script>
+<!-- SMOOTH SCROLL -->
+<script>
+$(function() {
+  $('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.min.js"></script>
+<script>
+$('#form-iframe').iFrameResize();
+</script>
+
 </body>
 
 </html>
