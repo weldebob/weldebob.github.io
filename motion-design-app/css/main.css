@@ -325,6 +325,7 @@ a.link-button.primary-btn:hover {
 }
 
 input[type=email].email-1 {
+  background-color: #151515;
   color: #ebebeb;
   font-family: 'Roboto', cursive;
 }
@@ -363,11 +364,9 @@ body.body-1 {
 
 .container-grid.hero-section {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-height: 40vh;
+  background-color: #000;
 }
 
 div.responsive-picture.hero-image {
@@ -506,12 +505,23 @@ li.list-item {
 }
 
 .container-grid.signup {
-  margin-top: 40px;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 40px 30px 60px;
   max-width: 800px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .5) 100%);
+  background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .5) 100%);
+  background-image:      -o-linear-gradient(top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .5) 100%);
+  background-image:         linear-gradient(180deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, .5) 100%);
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container-grid.account-settings {
@@ -687,6 +697,57 @@ div.responsive-picture.motion-designer {
   margin-top: 61px;
 }
 
+.container-grid.signup-slogan {
+  position: relative;
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -ms-flex-pack: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-filter: opacity(.2);
+          filter: opacity(.2);
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+div.responsive-picture.back-pane {
+  position: absolute;
+  max-width: 140px;
+  -webkit-filter: opacity(.4);
+          filter: opacity(.4);
+}
+
+div.responsive-picture.trigger-pane {
+  top: -50%;
+  left: 55px;
+}
+
+div.responsive-picture.trigger-list {
+  top: -60%;
+  right: 100px;
+}
+
+div.responsive-picture.moion-pane {
+  top: 90%;
+  left: 100px;
+  max-width: 180px;
+}
+
+div.responsive-picture.motion-list {
+  top: 100%;
+  right: 100px;
+}
+
 @supports (display: grid) {
   .container-grid.app-overview {
     display: grid;
@@ -757,7 +818,6 @@ div.responsive-picture.motion-designer {
   }
 
   p.paragraph.paragraph-4 {
-    margin-left: 2%;
     color: rgba(0, 0, 0, .87);
     font-size: 17px;
   }
@@ -859,6 +919,8 @@ div.responsive-picture.motion-designer {
   .container-grid.pane-explanation {
     margin-right: auto;
     margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
     max-width: 600px;
   }
 
@@ -888,7 +950,6 @@ div.responsive-picture.motion-designer {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    max-width: 96%;
     width: auto;
   }
 
@@ -916,6 +977,14 @@ div.responsive-picture.motion-designer {
        -moz-transform: translateX(0%);
          -o-transform: translateX(0%);
             transform: translateX(0%);
+  }
+
+  div.responsive-picture.trigger-pane {
+    left: -55px;
+  }
+
+  div.responsive-picture.trigger-list {
+    right: -10px;
   }
 
   @supports (display: grid) {
