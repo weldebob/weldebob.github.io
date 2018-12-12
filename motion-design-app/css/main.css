@@ -319,6 +319,19 @@ a.link-button.btn.primary-btn {
   height: auto;
 }
 
+a.link-button.fly-in {
+  position: absolute;
+  bottom: 100px;
+  left: 40%;
+  padding: 16px 30px;
+  height: auto;
+  background-color: #e5b7fc;
+  color: #32183f;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: 'Roboto Condensed', cursive;
+}
+
 a.link-button.primary-btn:hover {
   background-color: transparent;
   color: #2adff1;
@@ -796,11 +809,16 @@ div.responsive-picture.motion-list {
   }
 
   h6.pane-details-header {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 640px;
     font-size: 22px;
+    line-height: 1.2;
   }
 
   h6.large.pane-details-header {
-    font-size: 42px;
+    max-width: none;
+    font-size: 5vw;
   }
 
   p.paragraph {
@@ -844,6 +862,12 @@ div.responsive-picture.motion-list {
   span.text-element.text-2 {
     color: rgba(231, 231, 231, .87);
     text-align: center;
+  }
+
+  /* Interaction Elements */
+
+  a.link-button.fly-in {
+    bottom: 300px;
   }
 
   .container-grid.detail-section {
@@ -903,6 +927,8 @@ div.responsive-picture.motion-list {
 
   .container-grid.detail-intro {
     margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container-grid.container-4 {
@@ -934,12 +960,26 @@ div.responsive-picture.motion-list {
 @media screen and (min-width: 62.0625rem) {
   /* Text Elements */
 
+  h6.large.pane-details-header {
+    font-size: 53px;
+  }
+
+  h6.pane-details-header {
+    max-width: none;
+  }
+
   p.paragraph.paragraph-4 {
     font-size: 18px;
   }
 
   span.text-element.step-header {
     right: -260px;
+  }
+
+  /* Interaction Elements */
+
+  a.link-button.fly-in {
+    bottom: -100px;
   }
 
   .container-grid.detail-section {
